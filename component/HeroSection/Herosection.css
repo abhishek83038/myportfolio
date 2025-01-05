@@ -52,7 +52,7 @@
   /* overflow: hidden; */
   box-shadow: 0px 0px 100px var(--main-color);
 }
-.Herosectionwrap .heroTextcol button:hover{
+.Herosectionwrap .heroTextcol button:hover {
   border: 3px solid var(--main-color);
   background-color: transparent;
   box-shadow: 1px 1px 50px var(--main-color);
@@ -60,24 +60,100 @@
   transform: translateY(-3px);
 }
 
-.hero_icons{
+.hero_icons {
   border: 2px solid var(--main-color);
   height: 35px;
   width: 35px;
   padding: 8px;
   border-radius: 50%;
   color: var(--main-color);
+  color: #fff;
   transition: 0.5s;
 }
 
-.hero_icons:hover{
+.hero_icons:hover {
   border-radius: 50%;
   cursor: pointer;
-  color: #fff;
   box-shadow: 1px 1px 50px var(--main-color);
   transform: translateY(-3px);
 }
 
+.socialIconsWrap{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.typewriter span {
+  position: relative;
+  margin-left: 10px;
+}
+.typewriter span::before {
+  content: "Sofware Developer";
+  animation: words 20s infinite;
+}
+.typewriter span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 2px solid var(--main-color);
+  right: -8px;
+  background-color: var(--bg-color);
+  animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cursor {
+  to {
+    border-left: 2px solid var(--main-color);
+  }
+}
+@keyframes words {
+  0%,
+  20% {
+    content: "React js Developer";
+  }
+  21%,
+  40% {
+    content: "React Native Developer";
+  }
+  41%,
+  60% {
+    content: "UI/UX Designer";
+  }
+  61%,
+  80% {
+    content: "Fullstack Developer";
+  }
+  81%,
+  100% {
+    content: "Programmer";
+  }
+}
+
+@keyframes typing {
+  19%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80% {
+    width: calc(100% + 8px);
+  }
+}
 @media only screen and (max-width: 600px) {
   .Herosectionwrap {
     height: auto;
@@ -103,8 +179,13 @@
     align-items: center;
     margin-top: 60px;
   }
-  .Herosectionwrap .heroTextcol p{
+  .Herosectionwrap .heroTextcol p {
     text-align: center;
   }
-
+  .socialIconsWrap{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
 }

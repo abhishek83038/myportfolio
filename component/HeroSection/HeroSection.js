@@ -12,14 +12,18 @@ const HeroSection = () => {
         <div className="row herosectionrow">
           <div className="col-md-7 heroTextcol">
             <h1>Abhishek Kumar Mourya</h1>
-            <h4>I'm a <span style={{color:"var(--main-color)"}}>React Developer</span></h4>
+            <h4 className="typewriter">
+              I'm a
+              <span style={{ color: "var(--main-color)" }}>
+              </span>
+            </h4>
             <p className="my-3">
               i am a react developr with more than 2 years of experience . and i
               also a react native developer to make a paerfect apps. i am a
               react developr with more than 2 years of experience . and i also a
               react native developer to make a paerfect apps
             </p>
-            <div className="d-flex align-items-center gap-4">
+            <div className="socialIconsWrap">
               <button>Download CV</button>
               <div className="d-flex gap-3">
                 <FaGithub className="hero_icons" />

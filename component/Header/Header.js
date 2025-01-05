@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Header.css";
 import { MdMenu } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
+import mySelf from "../../public/myself2.png"
 
 
 const Header = () => {
@@ -10,7 +11,8 @@ const Header = () => {
     <div className="headerWrapper">
       <div className="container">
         <div className="headernavbar">
-          <div>
+          <div className="d-flex align-items-center gap-4">
+          <img src={mySelf.src} width="50px" height="50px" style={{borderRadius:"50%",border:"2px solid #fff"}}/>
             <h2 className="logo">Portfolio..</h2>
           </div>
           <div className="d-md-none d-block" onClick={()=>setOpen(!open)}>
