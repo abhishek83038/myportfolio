@@ -1,0 +1,106 @@
+.MyServicesWrap {
+  background-color: var(--bg-main);
+  /* min-height: 100vh; */
+  padding: 50px 0px;
+  position: relative;
+}
+.boxshadowmiddle{
+    position: absolute;
+    right: 0px;
+    top: -10%;
+    width:200px;
+    left: 5%;
+    height:100px;
+    background-color: #7cf03d27;
+    border-radius: 50%;
+    box-shadow: 0px 0px 100px var(--main-color);
+}
+.MyServicesWrap h1 {
+  text-align: center;
+  padding: 10px 0px;
+  color: #fff;
+  position: relative;
+  width: fit-content;
+  justify-self: center;
+  font-weight: bold;
+}
+.MyServicesWrap h1::after {
+  content: "";
+  height: 5px;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  width: 60px;
+  position: absolute;
+  top: 100%;
+  left: 40%;
+}
+.MyServicesWrap .servicesCard {
+  background-color: var(--second-bg-color);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--second-bg-color);
+  transition: 0.5s;
+}
+.MyServicesWrap .servicesCard:hover {
+  border: 1px solid var(--main-color);
+  transform: scale(1.02);
+  /* box-shadow: 0px 0px 20px var(--main-color); */
+}
+.MyServicesWrap .servicesCard:hover h4 {
+  /* transform: scale(1.02); */
+  letter-spacing: 1px;
+  color: var(--main-color);
+}
+.MyServicesWrap .servicesCard h4 {
+  color: #fff;
+  margin-top: 15px;
+  transition: 1s;
+  font-size: 18px;
+}
+.MyServicesWrap .servicesCard p {
+  margin-top: 15px;
+  margin-bottom: 15px !important;
+  font-size: 13px;
+  color: #d3d3d3;
+}
+.MyServicesWrap .servicesCard .goicon {
+  transform: rotate(45deg);
+  transition: 1s;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 35
+}
+.goiconcode{
+  font-size: 30px;
+}
+.MyServicesWrap .servicesCard:hover .goicon {
+  transform: rotate(-45deg);
+  background-color: var(--main-color);
+  border-radius: 50%;
+  padding: 5px;
+  color: var(--bg-main) !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .MyServicesWrap {
+        height: auto;
+        margin-top: 70px;
+      }
+      .boxshadowmiddle{
+          right: 0px;
+          top: -10%;
+          width:150px;
+          left: 0%;
+          height:70px;
+      }
+      .MyServicesWrap h1::after {
+        left: 35%;
+      }
+      .MyServicesWrap .servicesCard .goicon {
+        font-size: 20px
+
+      }
+      .goiconcode{
+        font-size: 25px;
+      }
+}
