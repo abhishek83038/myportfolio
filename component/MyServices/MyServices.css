@@ -1,7 +1,7 @@
 .MyServicesWrap {
   background-color: var(--bg-main);
-  /* min-height: 100vh; */
-  padding: 50px 0px;
+  min-height: 100vh;
+  padding: 80px 0px;
   position: relative;
 }
 .boxshadowmiddle{

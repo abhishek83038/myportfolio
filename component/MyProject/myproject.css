@@ -1,0 +1,86 @@
+.myprojextWrapper {
+  background-color: var(--bg-main);
+  min-height: 100vh;
+  padding: 80px 0px;
+}
+.myprojextWrapper h1 {
+  text-align: center;
+  padding: 10px 0px;
+  color: #fff;
+  position: relative;
+  width: fit-content;
+  justify-self: center;
+  font-weight: bold;
+}
+.projCard {
+  background-color: var(--second-bg-color);
+  border-radius: 10px;
+  position: relative;
+  padding: 10px;
+  transition: 1s;
+  overflow: hidden;
+}
+.projCard img {
+  height: 250px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.projCard h6{
+  color: #fff;
+  margin-top: 10px;
+}
+.projCardHover{
+  position: absolute;
+  /* display: none; */
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+  background-color: #323946e5;
+  border-radius: 10px;
+  padding:10px 20px 20px 20px;
+  transition: 0.5s;
+}
+.projCard:hover .projCardHover{
+  bottom: 0;
+}
+.projCardHover h6{
+  font-size: 13px;
+  font-weight: 400;
+}
+.projCardHover p{
+  font-size: 15px;
+  color: #fff;
+}
+
+.projCard:hover img {
+  opacity: 0.8;  
+}
+.projCardHover .viewbtn{
+  outline: none;
+  border: 2px solid #fff ;
+  border-radius: 30px;
+  padding: 0px 10px;
+  color:#fff;
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.projCardHover .viewbtn:hover{
+  transform: translatey(-2px);
+}
+.projCardHover .livebtn{
+  outline: none;
+  border: none ;
+  border-radius: 30px;
+  padding: 0px 10px;
+  color:#3b3b3b;
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.projCardHover .livebtn:hover{
+  transform: translatey(-2px);
+}
+

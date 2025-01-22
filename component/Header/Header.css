@@ -13,7 +13,7 @@
 .headernavbar{
     display: flex;
     justify-content: space-between;
-    padding: 10px 0px;
+    padding: 0px 0px;
     align-items: center;
 }
 .menus{
@@ -23,34 +23,92 @@
 .menus p{
     color: #fff;
     transition: 0.5s;
-    height: 50px;
-    line-height: 50px;
+    height: 80px;
+    line-height: 80px;
     padding: 0px 20px;
     font-weight: 400 ;
 }
-.menus p:hover{
+.menus p a{
+    color: #fff;
+    transition: 0.5s;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    font-weight: 400 ;
+}
+.menus p a:hover {
     color: var(--main-color);
     transform: translateY(-2px);
     cursor: pointer;
 }
-.menusmobile{
+.overlap{
     display: flex;
     gap: 20px;
     flex-direction: column;
     position: absolute;
-    top: 50px;
+    top: 60px;
     right: 0px;
     width: 100%;
     padding: 20px 0px;
     z-index: 1000;
     height: calc(100vh - 50px);
     border-top: 0.1 solid #ddd;
+    background-color: rgba(70, 70, 70, 0.5);
+    transition: 0.2s;
+}
+.menusmobile{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    padding: 20px 0px;
+    z-index: 1000;
+    height: calc(100vh - 50px);
+    /* border-top: 0.1 solid #ddd; */
     background-color: var(--bg-color);
+    transition: 0.5s;
 }
 .menusmobile p{
     color: #fff;
     text-align: center;
+    transition: 0.5s;
+    font-weight: bold;
 }
+/* Basic styles for hamburger */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;  /* Adjust size */
+    height: 15px;  /* Adjust size */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .line {
+    width: 100%;
+    height: 3px; /* Line thickness */
+    background-color: #fff; /* Color of the hamburger lines */
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  /* When the hamburger is open (clicked), animate the lines */
+  .hamburger.open .line1 {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger.open .line2 {
+    opacity: 0;
+  }
+  
+  .hamburger.open .line3 {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+  
 @media only screen and (max-width: 600px) {
     .headernavbar{
         padding: 5px;

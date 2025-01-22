@@ -74,7 +74,7 @@ const list = [
 
 const MyServices = () => {
   return (
-    <div className="MyServicesWrap">
+    <div className="MyServicesWrap" id="service">
       <h1>
         My <span style={{ color: "var(--main-color)" }}>Services</span>
         {/* <div className="boxshadowmiddle"></div> */}
