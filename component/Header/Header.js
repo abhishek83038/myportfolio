@@ -25,10 +25,18 @@ const Header = () => {
             </div>
           </div>
           <div className="menus d-md-flex d-none">
-            <p><a href="/#">Home</a></p>
-            <p><a href="#service">Service</a></p>
-            <p><a href="#resume">Resume</a></p>
-            <p><a href="#MyProject">Project</a></p>
+            <p>
+              <a href="/#">Home</a>
+            </p>
+            <p>
+              <a href="#service">Service</a>
+            </p>
+            <p>
+              <a href="#resume">Resume</a>
+            </p>
+            <p>
+              <a href="#MyProject">Project</a>
+            </p>
             <p>Contact</p>
           </div>
           {/* {open && ( */}
@@ -37,11 +45,18 @@ const Header = () => {
               className="menusmobile"
               style={{ width: open ? "60%" : "0px" }}
             >
-              <p style={{ opacity: open ? "1" : "0" }}>Home</p>
-              <p style={{ opacity: open ? "1" : "0" }}>Service</p>
-              <p style={{ opacity: open ? "1" : "0" }}>Resume</p>
-              <p style={{ opacity: open ? "1" : "0" }}>Project</p>
-              <p style={{ opacity: open ? "1" : "0" }}>Contact</p>
+              <p style={{ opacity: open ? "1" : "0" }} onClick={()=>setOpen(false)}>
+                <a href="/#">Home</a>
+              </p>
+              <p style={{ opacity: open ? "1" : "0" }} onClick={()=>setOpen(false)}>
+                <a href="#service">Service</a>
+              </p>
+              <p style={{ opacity: open ? "1" : "0" }} onClick={()=>setOpen(false)}>
+                <a href="#resume">Resume</a>
+              </p>
+              <p style={{ opacity: open ? "1" : "0" }} onClick={()=>setOpen(false)}>
+                <a href="#MyProject">Project</a>
+              </p>
             </div>
           </div>
           {/* )} */}

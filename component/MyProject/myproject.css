@@ -87,7 +87,7 @@
 
 @media only screen and (max-width: 600px) {
   .projCard img {
-    height: 180px;
+    height: 200px;
     border-radius: 10px;
     transition: 0.3s;
   }

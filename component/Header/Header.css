@@ -76,6 +76,7 @@
     text-align: center;
     transition: 0.5s;
     font-weight: bold;
+    margin-top: 20px;
 }
 /* Basic styles for hamburger */
 .hamburger {
