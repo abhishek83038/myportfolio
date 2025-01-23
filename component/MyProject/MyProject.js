@@ -2,10 +2,15 @@ import React from "react";
 import "./myproject.css";
 import superc1 from "../../public/superc1.png";
 import Farmers from "../../public/Farmer.png";
+import horizon from "../../public/horizon.png";
+import sigtech from "../../public/sigtech.png";
+
 
 const projects=[
 {id:1,title:"The SuperC",description:" Online practice platform designed for student of classes 3 to 7",image:superc1.src,liveurl:"https://www.thesuperc.com/"},
 {id:2,title:"Farmers Market",description:"Ecommerce website for farmers ",image:Farmers.src,liveurl:"https://fmwebsite-446307.el.r.appspot.com/"},
+{id:3,title:"Horizon Logistix",description:"Horizon is to deliver top-quality freight services ",image:horizon.src,liveurl:"https://www.hlogistix.com"},
+{id:4,title:"Sigtech Solutions",description:"Sigtech Solutions is a leading company in the field of railway signalling training ",image:sigtech.src,liveurl:"https://sigtech-solutions.com/"},
 ]
 
 const MyProject = () => {

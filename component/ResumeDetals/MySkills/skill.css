@@ -35,4 +35,14 @@
         display: block;
         font-weight: bold;
     }
+    .skillscard{
+        background-color: var(--second-bg-color);
+        height: 115px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+        position: relative;
+    }
 }

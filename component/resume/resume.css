@@ -38,9 +38,6 @@
   color: var(--main-color);
   transform: translatex(5px);
 }
-.resume_navs_wrap .resum_btn_wrap button:active {
-  transform: translatex(-5px);
-}
 .resume_navs_wrap .resum_btn_wrap button.active {
   border: 2px solid var(--main-color);
   font-weight: bold;
