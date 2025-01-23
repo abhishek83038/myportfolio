@@ -10,6 +10,9 @@ const Resume = () => {
   return (
       <div className="resumeWrap" id="resume">
         <div className="container">
+        <h1 className="text-center text-white">
+          My <span style={{ color: "var(--main-color)" }}>Resume</span>
+        </h1>
           <div className="row py-4">
             <div className="col-md-3 ">
               <div className="resume_navs_wrap">
